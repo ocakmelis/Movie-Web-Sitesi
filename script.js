@@ -9,9 +9,9 @@ arrows.forEach((arrow, i) => {
     arrow.addEventsListener("click", function() {
         clickCounter++;
         if(imageItem - (4 + clickCounter) + (4 - widthRatio) >= 0) {
-            movieLists[i].style.transform = 'translateX (${
+            movieLists[i].style.transform = `translateX (${
                 movieLists[i].computedStyleMap().get("transform")[0].x.value - 300
-        }px)';
+        }px)`;
 } else {
     movieLists[i].style.transform = "translateX(0)";
     clickCounter = 0;
